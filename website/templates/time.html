@@ -1,0 +1,28 @@
+{% extends "base_time.html" %}
+
+{% block title %}
+{{get_flashed_messages(with_categories=False)[0]}}
+{% endblock %}
+
+
+{% block navbarname %}
+{{get_flashed_messages(with_categories=False)[0]}}
+{% endblock %}
+
+{% block content %}
+{%with messages = get_flashed_messages(with_categories=False)[1]%}
+{% for message in messages %}
+
+<div class="posterA poster" style="background-image: url({{message['poster']}});">
+    <div class='poster-div'>
+        <p class="channel"><img src='{{ message["icon"] }}' alt='{{message["channel"]}}' height="60px" width="60px"></img></p>
+        <p class="title">{{message['title']}}</p>
+        <p class="hour">{{message['start'][1]}}</p>
+        <p class="desc">{{message['desc'][:90] + "..."}}</p>
+    </div>
+</div>
+
+
+{% endfor %}
+{% endwith %}
+{% endblock %}

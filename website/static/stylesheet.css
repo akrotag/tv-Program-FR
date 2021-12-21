@@ -1,0 +1,151 @@
+
+
+body{
+    overflow-x: hidden;
+}
+
+
+
+/***Themes***/
+
+
+
+.navbar-dark-bg{
+    -moz-transition: all .2s ease-in;
+    -o-transition: all .2s ease-in;
+    -webkit-transition: all .2s ease-in;
+    transition: all .2s ease-in;
+    background-color: rgb(48, 48, 48);
+    background-image: url("imagesWeb\\navbar-bdg.png");
+    background-size: 100px 50px;
+    /* rgb(48, 48, 48),  */
+}
+
+.navbar-dark{
+    color:white;
+}
+
+.navbar-dark-bg:hover{
+    background: rgb(0, 0, 0);
+    background-image: url("imagesWeb\\navbar-bdg.png");
+    background-size: 100px 50px;
+}
+
+/***Unique stuff***/
+
+.navbar{
+    position: absolute;
+    top : 0%;
+    left: 0%;
+    padding-right: 100%;
+    padding-bottom: 20px;
+}
+
+.navbar-middle{
+    position: absolute;
+    top : 50%;
+    left: 0%;
+    padding-right: 100%;
+    padding-bottom: 20px;
+}
+
+.navbar-child{
+    display: inline-block;
+    width: 100px;
+    font-size: large;
+    padding-top: 10px;
+    padding-left: 10%
+}
+
+.row{
+    width: 100%;
+    text-align:center;
+    text-shadow:  2px 0 0 #000, -2px 0 0 #000, 0 2px 0 #000, 0 -2px 0 #000, 1px 1px #000, -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000;
+}
+
+
+.tonight-poster{
+    position: absolute;
+    top: 56%;
+    display: inline-block;
+}
+
+.now-poster{
+    position: absolute;
+    top: 7%;
+    display: inline-block
+}
+
+.poster{
+    background-size: 240px 320px;
+    height: 320px;
+    width: 240px;
+}
+
+
+.posterA{
+    margin-top: 1%;
+    margin-left: 10px;
+    display: inline-block;
+}
+
+.posterTonight{
+    margin-top: 1%;
+    margin-left: 10px;
+    display: inline-block;
+}
+
+
+
+.poster-div{
+    position:relative;
+    background-color: rgba(0, 0, 0, 0.5);
+    top: 57.5%;
+    height: 120px;
+    width: 240px;
+    text-shadow:  2px 0 0 #000, -2px 0 0 #000, 0 2px 0 #000, 0 -2px 0 #000, 1px 1px #000, -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000;
+    color:white;
+    
+}
+
+.littlebit-left{
+    position: absolute;
+    left: 5%;
+}
+
+
+.border{    
+    border: solid red;
+    border-width: 5 5px;
+}
+
+.channel{
+    position: relative;
+    text-align: left; 
+    font-size: medium;
+    top : -190px;
+}
+
+.title{
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: clip;
+    position: relative;
+    text-align: center; 
+    font-size: x-large; 
+    top: -85px;
+}
+
+
+.hour{
+    position: relative;
+    text-align: center; 
+    font-size: small;
+    top: -110px;
+}
+
+.desc{
+    position: relative;
+    margin-left: 5%;
+    top: -120px;
+}

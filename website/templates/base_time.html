@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link type="text/css" href='{{ url_for('static', filename='stylesheet.css') }}' rel='stylesheet'>
+    <title>{% block title %}{% endblock %}</title>
+</head>
+<body>
+    <div>
+        <div class="navbar row navbar-dark navbar-dark-bg">
+            <div class='navbar-child'>{% block navbarname %}{% endblock %}</div>
+        </div>
+        <div class="now-poster">            
+            {% block content %}
+            {% endblock %}
+        </div>
+    </div>
+</body>
+</html>
